@@ -1,4 +1,4 @@
-// Assignment Code
+// Assign Charachter Buckets, button selector, set beenGenerated to false and the allCharachter array to nothing
 var generateBtn = document.querySelector("#generate");
 var beenGenerated = false;
 var lowerCaseArray = [
@@ -63,6 +63,7 @@ var numericalArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 var specialArray = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")"];
 var allChar = []
 
+//random number formula
 function random(min, max) {
   const num = Math.floor(Math.random() * (max - min + 1)) + min;
   return num;
@@ -88,7 +89,7 @@ function writePassword() {
     alert("That is too long.  Please choose a number between 8-128");
     return;
   }
-
+//this is for if the user inputs something that's not a number.  Had to look this one up, super useful
   if (isNaN(pwordLength) === true) {
     alert("That is not a number.  Please try again.");
     return;
@@ -112,7 +113,7 @@ if (includeLowerCase===false && includeUpperCase===false && includeNumerical===f
     return;
 }
 
-///Need to spread arrays.  Was running into full Arrays
+///Need to spread arrays.  Was running into full Arrays.  Had to look this one up, super useful.
 if (includeLowerCase) {
   allChar = [...allChar, ...lowerCaseArray]
 }
@@ -148,18 +149,5 @@ return actualPassword
 }
 
 
-// Below the button.  Need a series of prompts (use confirm? Y/n style?)
-
-//when looping through have option for "That is invalid input" and return
-
-//Choose a length from 8-128 Long (needs to be prompt)
-
-//Ask for charachter types to include {Uppercase, lowercase, number, special charachters}  Do this individually?  Can I have a radio prompt?  Could get messy as prompt.
-
-//Integrate into output.  At least one charachter represented
-
-//Password generated in alert and written on page (either/or but I'd like to have on page regardless) 
-
-//Use randomizer "mathfloor" to generate password.  Figure out how to work in answers from prompts to set paramaters.  Have them pull from Arrays.
-//
+//Event
 generateBtn.addEventListener("click", writePassword);
