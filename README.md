@@ -29,7 +29,11 @@ THEN the password is either displayed in an alert or written to the page
 
 ## Installation
 
-The user selects which of the four pools of charachters (lower and upper case, numbers or special charachters) and how long the the password will be.  The user must select at least one type of charachter otherwise they will get and error message and be prompeted to try again.  This is accomplished through a series of prompts the pop up after hitting the generate button.  If I were to do this again, I think something like checkboxes or something that limits the user's input type would make for a better user experience
+The user selects which of the four pools of charachters (lower and upper case, numbers or special charachters) and how long the the password will be.  The user must select at least one type of charachter otherwise they will get and error message and be prompeted to try again.  
+
+This is accomplished through a series of prompts the pop up after hitting the generate button.  
+
+If I were to do this again, I think something like checkboxes or something that limits the user's input type would make for a better user experience.  Prompts being limited to "Ok" and "Cancel" muddies the water as well.
 
 ## Usage
 
